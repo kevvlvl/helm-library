@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
+  labels:
+    app: {{ .Values.global.mode }}
+data:
+  geolocation: {{ .Values.global.geolocation }}
+  instanceName: {{ .Values.global.instanceName }}

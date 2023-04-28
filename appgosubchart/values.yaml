@@ -1,0 +1,4 @@
+global:
+  mode: Unlocked
+  geolocation: Austin, TX
+  instanceName: go-app-subchart

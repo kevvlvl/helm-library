@@ -1,0 +1,6 @@
+{{- include "gochart.configmap" (list . "appgochart.configmap") -}}
+{{- define "appgochart.configmap" -}}
+data:
+  geolocation: "Houston"
+  instanceName: "go-app-implementer"
+{{- end -}}

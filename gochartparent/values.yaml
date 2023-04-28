@@ -1,0 +1,4 @@
+global:
+  mode: Locked
+  geolocation: Montreal, QC
+  instanceName: unimplemented-instance

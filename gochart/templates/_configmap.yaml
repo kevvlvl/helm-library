@@ -1,0 +1,12 @@
+{{- define "gochart.configmap.tpl" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
+  labels:
+    app: {{ .Values.mode }}
+data: {}
+{{- end -}}
+{{- define "gochart.configmap" -}}
+{{- include "gochart.util.merge" (append . "gochart.configmap.tpl") -}}
+{{- end -}}
