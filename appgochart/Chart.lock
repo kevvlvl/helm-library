@@ -1,6 +1,0 @@
-dependencies:
-- name: gochart
-  repository: file://../gochart
-  version: 0.1.0
-digest: sha256:cfeff1d49da018c75c512b8bca190f0a0448d00108a3c8b1e3954a762caa1c7e
-generated: "2023-04-28T12:47:54.02336444-04:00"

@@ -14,6 +14,18 @@ helm dependency update appgochart
 Validate the charts by generating k8s manifests
 ```
 helm template appgochart --dry-run --debug
+
+---
+# Source: appgochart/templates/configmap.yaml
+apiVersion: v1
+data:
+  geolocation: Houston
+  instanceName: go-app-implementer
+kind: ConfigMap
+metadata:
+  labels:
+    app: Unlocked
+  name: appgochart-release-name
 ```
 
 ## Documentation

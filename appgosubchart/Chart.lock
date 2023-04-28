@@ -1,6 +1,0 @@
-dependencies:
-- name: gochartparent
-  repository: file://../gochartparent
-  version: 2.1.0
-digest: sha256:4b9ce263393477dd6dfde4480e52a4ef2f255c07299ad24892e91f6187ffdb3f
-generated: "2023-04-28T13:42:52.47653996-04:00"
