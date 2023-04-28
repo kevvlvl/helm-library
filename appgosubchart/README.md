@@ -15,7 +15,21 @@ helm dependency update appgosubchart
 Validate the charts by generating k8s manifests
 ```
 helm template appgosubchart --dry-run --debug
+
+---
+# Source: appgosubchart/charts/gochartparent/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gochartparent-release-name
+  labels:
+    app: Unlocked
+data:
+  geolocation: Austin, TX
+  instanceName: go-app-subchart
 ```
+
+As we can see, those are values from the subchart's global values yaml. If we do not use global then a subchart cannot override values of a parent chart (in this case gochartpraent). It's the other way around, the parent can override subchart values.
 
 ## Documentation
 
