@@ -1,0 +1,6 @@
+dependencies:
+- name: chartlibrary
+  repository: file://../chartlibrary
+  version: 0.1.0
+digest: sha256:fa03422c59b1454330b3e6d7859a82b8f250f6e79f1b7cac2fa6931d11293170
+generated: "2023-05-01T13:55:49.480269798-04:00"

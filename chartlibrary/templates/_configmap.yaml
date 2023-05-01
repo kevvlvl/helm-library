@@ -1,4 +1,4 @@
-{{- define "gochart.configmap.tpl" -}}
+{{- define "chartlibrary.configmap.tpl" -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -7,6 +7,6 @@ metadata:
     app: {{ .Values.mode }}
 data: {}
 {{- end -}}
-{{- define "gochart.configmap" -}}
-{{- include "gochart.util.merge" (append . "gochart.configmap.tpl") -}}
+{{- define "chartlibrary.configmap" -}}
+{{- include "chartlibrary.util.merge" (append . "chartlibrary.configmap.tpl") -}}
 {{- end -}}

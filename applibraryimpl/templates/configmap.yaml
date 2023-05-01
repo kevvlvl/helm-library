@@ -1,0 +1,6 @@
+{{- include "chartlibrary.configmap" (list . "applibraryimpl.configmap") -}}
+{{- define "applibraryimpl.configmap" -}}
+data:
+  geolocation: "Houston"
+  instanceName: "app-lib-implementer"
+{{- end -}}

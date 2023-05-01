@@ -1,0 +1,6 @@
+dependencies:
+- name: chartparent
+  repository: file://../chartparent
+  version: 2.1.0
+digest: sha256:699900e1c94613edd4338140530d13e56d5a2e3979fbd49412114463238ff94f
+generated: "2023-05-01T13:58:50.55222976-04:00"
